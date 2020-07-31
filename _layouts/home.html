@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var filterList = {
+			init: function() {
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				    selectors: {
+    			        target: '.portfolio',
+    			        filter: '.filter'
+    		        },
+    		        load: {
+      		            filter: 'all'
+      		        }
+				});
+			}
+		};
+		filterList.init();
+	});
+</script>
+
+<div class="gallery">
+    <ul id="filters" class="clearfix">
+        <li><span class="filter active" data-filter="all">All</span></li>
+        <li><span class="filter" data-filter=".digital">Digital Design</span></li>
+        <li><span class="filter" data-filter=".print">Print Design</span></li>
+        <li><span class="filter" data-filter=".illustration">Illustration</span></li>
+    </ul>
+
+    <div id="portfoliolist">
+        {% for post in site.posts %}
+        <!-- link to each post in home.html -->
+        <div class="portfolio {{ post.tag }}" data-cat="{{ post.tag }}">
+            <div class="portfolio-wrapper">
+                <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.feature-img }}" alt="{{ post.feature-img-alt }}"/></a>
+                <div class="label">
+                    <div class="label-text">
+                        <a class="text-title">{{ post.title }}</a>
+                        <span class="text-category">{{ post.category }}</span>
+                    </div>
+                    <div class="label-bg"></div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

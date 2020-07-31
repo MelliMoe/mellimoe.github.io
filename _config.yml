@@ -1,0 +1,59 @@
+# Name of site (displayed in the header)
+name: MelliMoe
+
+# Short bio or description (displayed in the header)
+description: The art of Moe Moen
+
+# URL of avatar or profile pic
+avatar: /images/avatar.png
+
+#
+# Flags below are optional
+#
+
+# Includes an icon in the footer for each username
+footer-links:
+  email: shelbyamoen@gmail.com
+  instagram: melli.moe
+  linkedin: shelby-ann-moen
+  twitter: missmellifluous
+
+# Disqus shortname, entering this will enable commenting on posts
+disqus:
+
+# Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
+
+# Website URL
+# Used for Sitemap.xml and RSS feed
+url: http://mellimoe.github.io
+
+# Add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+#
+# !! Don't need to change any of the configuration flags below !!
+#
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+permalink: /:title/
+
+# Set the Sass partials directory
+sass:
+  sass_dir: _sass
+  style: :compressed # Either :expanded or :compressed
+
+# Use the following plug-ins
+gems:
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
