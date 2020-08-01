@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title: Internal Communication Flyer
 category: Print Design
 feature-img: /assets/img/print/powerhour2.0.png

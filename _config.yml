@@ -38,6 +38,17 @@ baseurl: ""
 # !! Don't need to change any of the configuration flags below !!
 #
 
+# Collections for general pages and portfolio posts
+collections:
+  general:
+    output: true
+    permalink: /:title/
+  portfolio:
+    output: true
+    permalink: /:collection/:title/
+
+collections_dir: pages
+
 markdown: kramdown
 kramdown:
   input: GFM

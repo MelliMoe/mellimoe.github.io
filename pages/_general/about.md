@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: general
 title: About Me
-published: true
+menu-title: About
 ---
 
 I am groot.

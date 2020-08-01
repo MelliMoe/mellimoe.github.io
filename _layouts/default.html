@@ -31,8 +31,10 @@
             </div>
 
             <nav>
-                <a href="{{ site.baseurl }}/">Home</a>
-                <a href="{{ site.baseurl }}/about">About</a>
+                <a href="{{ site.baseurl }}">Home</a>
+                {% for post in site.general %}
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.menu-title }}</a>
+                {% endfor %}
             </nav>
         </header>
     </div>

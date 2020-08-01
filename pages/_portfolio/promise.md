@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title: Promise
 category: Illustration
 feature-img: /assets/img/illustration/yka-promise.jpg

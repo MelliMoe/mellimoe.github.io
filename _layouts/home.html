@@ -27,14 +27,13 @@ layout: default
     <ul id="filters" class="clearfix">
         <li><span class="filter active" data-filter="all">All</span></li>
         {% for post-category in site.post-categories %}
-        <li><span class="filter" data-filter=".{{ post-category | downcase | replace: " ", "-" }}">{{ post-category }}</span></li>
+        <li><span class="filter" data-filter='.{{ post-category | downcase | replace: " ", "-" }}'>{{ post-category }}</span></li>
         {% endfor %}
     </ul>
 
     <div id="portfoliolist">
-        {% for post in site.posts %}
-        <!-- link to each post in home.html -->
-        <div class="portfolio {{ post.category | downcase | replace: " ", "-" }}" data-cat="{{ post.category | downcase | replace: " ", "-" }}">
+        {% for post in site.portfolio %}
+        <div class='portfolio {{ post.category | downcase | replace: " ", "-" }}' data-cat='{{ post.category | downcase | replace: " ", "-" }}'>
             <div class="portfolio-wrapper">
                 <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.feature-img }}" alt="{{ post.feature-img-alt }}"/></a>
                 <div class="label">

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title: Luxury Property Brochure
 category: Print Design
 feature-img: /assets/img/print/brochure.jpg
