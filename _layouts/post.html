@@ -18,3 +18,17 @@ layout: default
         </div>
     </div>
 </div>
+
+<div class="PageNavigation">
+    {% if page.previous.url %}
+    <div class="prev"><a href="{{page.previous.url}}">Previous</a></div>
+    {% else %}
+    <div class="prev">&nbsp;</div>
+    {% endif %}
+    <div class="home"><a href="{{ side.baseurl }}">Home</a></div>
+    {% if page.next.url %}
+    <div class="next"><a href="{{page.next.url}}">Next</a></div>
+    {% else %}
+    <div class="next">&nbsp;</div>
+    {% endif %}
+</div>

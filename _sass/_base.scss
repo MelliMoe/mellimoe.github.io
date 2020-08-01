@@ -393,6 +393,37 @@ nav {
   }
 }
 
+.PageNavigation {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.PageNavigation a {
+  color: $purple-dark;
+}
+
+.PageNavigation a:hover {
+  color: $purple-pink;
+}
+
+.PageNavigation .next {
+  width: 33%;
+  text-align: right;
+}
+
+.PageNavigation .prev {
+  width: 33%;
+  text-align: left;
+}
+
+.PageNavigation .home {
+  width: 33%;
+  text-align: center;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
