@@ -7,6 +7,8 @@ html {
 	font-family: Helvetica, Arial, Verdana;
 	position: relative;
 	margin: 0 auto;
+	padding: 0;
+	width: 100%;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -14,14 +16,28 @@ html {
 }
 
 #filters {
+    width: 100%;
     font-size: 14px;
 	margin: 1%;
 	padding: 0;
 	list-style: none;
+
+	@include mobile {
+	    text-align: center;
+	    font-size: 16px;
+	    margin: 10px auto;
+	    margin-top: -10px;
+	}
 }
 
 #filters li {
 	float: left;
+
+	@include mobile {
+        float: none;
+        display: inline-block;
+        padding: 10px 0;
+    }
 }
 
 #filters li span {
@@ -31,6 +47,10 @@ html {
 	color: $gray;
 	cursor: pointer;
 	border-radius: 3px;
+
+	@include mobile {
+        display: inline-block;
+    }
 }
 
 #filters li span:hover {
@@ -111,12 +131,12 @@ html {
 }
 
 .portfolio .label a {
-	color: $lightGray;
+	color: $white;
 	text-decoration: none;
 	cursor: pointer;
 	&:hover,
 	&:active {
-		color: $lightGray;
+		color: $white;
 	}
 	transition: .3s;
 }
@@ -162,25 +182,44 @@ html {
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-	.gallery {
-		width: 95%;
-	}
 	#portfoliolist .portfolio {
 		width: 48%;
 		margin: 1%;
 	}
-	.portfolio,
+	#portfoliolist .portfolio,
 	.portfolio-wrapper {
-	    height: 150px;
+	    height: 300px;
 	}
 }
 
 
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	.gallery {
-		width: 70%;
+@media only screen and (max-width: 469px) {
+	#filters {
+        width: 300px;
+    }
+    #portfoliolist .portfolio,
+    .portfolio-wrapper {
+    	height: 160px;
+    }
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (max-width: 319px) {
+    #portfoliolist .portfolio {
+		width: 98%;
+		margin: 1%;
 	}
+	#portfoliolist .portfolio,
+	.portfolio-wrapper {
+	    height: 275px;
+	}
+	#filters {
+        width: 100%;
+    }
+    #filters li {
+    	display: block;
+    }
 }
 
 
