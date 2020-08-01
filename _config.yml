@@ -18,8 +18,11 @@ footer-links:
   linkedin: shelby-ann-moen
   twitter: missmellifluous
 
-# Disqus shortname, entering this will enable commenting on posts
-disqus:
+# List of categories for posts
+post-categories:
+  - Digital Design
+  - Print Design
+  - Illustration
 
 # Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:

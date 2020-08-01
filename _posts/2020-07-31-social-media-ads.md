@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Social Media Ads
-tag: digital
 category: Digital Design
-published: true
 feature-img: /assets/img/digital/victorads.png
 feature-img-alt: Social Media Ads
 mode: landscape
