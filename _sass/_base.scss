@@ -42,7 +42,7 @@ hr {
 	padding: 0;
 	border: 0;
     height: 1px;
-    background: #333;
+    background: $purple-dark;
 }
 
 table {
@@ -52,7 +52,7 @@ table {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $purple-black;
   font-weight: bold;
 
   line-height: 1.7;
@@ -81,7 +81,7 @@ h3 {
 
 h4 {
   font-size: 14px;
-  color: $gray;
+  color: $purple;
 }
 
 p {
@@ -94,7 +94,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
-    color: $purple;
+    color: $purple-pink;
   }
   transition: .3s;
 }
@@ -209,7 +209,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $purple-dark;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -242,7 +242,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $purple-dark;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
