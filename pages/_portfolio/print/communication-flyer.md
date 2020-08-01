@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: Internal Communication Flyer
+title: Communication Flyer
 category: Print Design
 feature-img: /assets/img/print/powerhour2.0.png
-feature-img-alt: Internal Communication Flyer
+feature-img-alt: Communication Flyer
 mode: portrait
 ---
 

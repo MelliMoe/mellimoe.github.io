@@ -18,11 +18,28 @@ footer-links:
   linkedin: shelby-ann-moen
   twitter: missmellifluous
 
-# List of categories for posts
-post-categories:
+# Ordered list of categories for portfolio posts
+portfolio-categories:
   - Digital Design
   - Print Design
   - Illustration
+
+# Collections for general pages and portfolio posts
+collections:
+  general:
+    output: true
+    permalink: /:title/
+    order:
+      - about.md
+      - contact.md
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+    order:
+      - digital/social-media-ads.md
+      - print/communication-flyer.md
+      - print/luxiry-brocure.md
+      - print/targeted-mailer.md
 
 # Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -38,17 +55,7 @@ baseurl: ""
 # !! Don't need to change any of the configuration flags below !!
 #
 
-# Collections for general pages and portfolio posts
-collections:
-  general:
-    output: true
-    permalink: /:title/
-  portfolio:
-    output: true
-    permalink: /:collection/:title/
-
 collections_dir: pages
-
 markdown: kramdown
 kramdown:
   input: GFM
