@@ -21,13 +21,13 @@ layout: default
 
 <div class="PageNavigation">
     {% if page.previous.url %}
-    <div class="prev"><a href="{{page.previous.url}}">Previous</a></div>
+    <div class="prev"><a href="{{page.previous.url}}"><i class="nav-icon arrow-left"></i></a></div>
     {% else %}
     <div class="prev">&nbsp;</div>
     {% endif %}
-    <div class="home"><a href="{{ side.baseurl }}">Home</a></div>
+    <div class="home"><a href="{{ side.url }}"><i class="nav-icon menu"></i></a></div>
     {% if page.next.url %}
-    <div class="next"><a href="{{page.next.url}}">Next</a></div>
+    <div class="next"><a href="{{page.next.url}}"><i class="nav-icon arrow-right"></i></a></div>
     {% else %}
     <div class="next">&nbsp;</div>
     {% endif %}
