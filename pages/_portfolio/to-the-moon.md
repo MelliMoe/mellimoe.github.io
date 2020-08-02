@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: To the Moon and Back
 category: Illustration
 feature-img: /assets/img/illustration/moeselene.png

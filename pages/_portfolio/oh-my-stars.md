@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: Oh My Stars!
 category: Illustration
 feature-img: /assets/img/illustration/moe_stars.png

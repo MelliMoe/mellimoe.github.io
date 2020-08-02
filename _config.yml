@@ -4,12 +4,8 @@ name: MelliMoe
 # Short bio or description (displayed in the header)
 description: The art of Moe Moen
 
-# URL of avatar or profile pic
+# Path of avatar or profile pic
 avatar: /images/avatar.png
-
-#
-# Flags below are optional
-#
 
 # Includes an icon in the footer for each username
 footer-links:
@@ -24,43 +20,66 @@ portfolio-categories:
   - Print Design
   - Illustration
 
-# Collections for general pages and portfolio posts
-collections:
-  general:
-    output: true
-    permalink: /:title/
-    order:
-      - about.md
-      - contact.md
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-    order:
-      - digital/social-media-ads.md
-      - print/communication-flyer.md
-      - print/luxiry-brocure.md
-      - print/targeted-mailer.md
+# Manual collections ordering doesn't work until Github moves to Jekyll4
+# For now there's some nested for loop hack in layouts
+menu-order:
+  - about
+  - contact
+portfolio-order:
+  - social-media-ads
+  - communication-flyer
+  - luxury-brochure
+  - targeted-mailer
+  - to-the-moon
+  - promise
+  - oh-my-stars
+  - everybodys-satellite
+  - crumbling
 
 # Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
 # Website URL
-# Used for Sitemap.xml and RSS feed
 url: http://mellimoe.github.io
 
-# Add in the baseurl here, like this: "/repository-name"
+# Add an additional layer to the website URL, like this: "/some-other-name"
 baseurl: ""
 
 #
 # !! Don't need to change any of the configuration flags below !!
 #
 
-collections_dir: pages
+# General configurations
 markdown: kramdown
 kramdown:
   input: GFM
 highlighter: rouge
 permalink: /:title/
+
+# Collections for general pages and portfolio posts
+collections_dir: pages
+collections:
+  general:
+    output: true
+    permalink: /:title/
+  portfolio:
+    output: true
+    permalink: /:collection/:categories/:title/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "general"
+    values:
+      layout: "general"
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio"
 
 # Set the Sass partials directory
 sass:
@@ -68,9 +87,10 @@ sass:
   style: :compressed # Either :expanded or :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-seo-tag # Auto generate SEO tags
 
 # Exclude these files from production _site
 exclude:

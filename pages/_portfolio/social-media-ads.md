@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: Social Media Ads
 category: Digital Design
 feature-img: /assets/img/digital/victorads.png

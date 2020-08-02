@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: Communication Flyer
 category: Print Design
 feature-img: /assets/img/print/powerhour2.0.png

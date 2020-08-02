@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+{% seo %}
 <head>
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -31,8 +32,12 @@
 
             <nav>
                 <a href="{{ site.baseurl }}/">Home</a>
-                {% for post in site.general %}
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.menu-title }}</a>
+                {% for i in site.menu-order %}
+                {% for p in site.general %}
+                {% if i == p.slug %}
+                <a href="{{ site.baseurl }}{{ p.url }}">{{ p.menu-title }}</a>
+                {% endif %}
+                {% endfor %}
                 {% endfor %}
             </nav>
         </header>

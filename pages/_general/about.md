@@ -1,5 +1,4 @@
 ---
-layout: general
 title: About Me
 menu-title: About
 ---

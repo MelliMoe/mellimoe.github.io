@@ -8,28 +8,32 @@ layout: default
 <div class="gallery">
     <ul id="filters" class="clearfix">
         <li><span class="filter active" data-filter="all">All</span></li>
-        {% for portfolio-category in site.portfolio-categories %}
-        <li><span class="filter" data-filter='.{{ portfolio-category | downcase | replace: " ", "-" }}'>{{ portfolio-category }}</span></li>
+        {% for c in site.portfolio-categories %}
+        <li><span class="filter" data-filter='.{{ c | downcase | replace: " ", "-" }}'>{{ c }}</span></li>
         {% endfor %}
     </ul>
 
     <div id="portfoliolist">
-        {% for post in site.portfolio %}
-        <div class='portfolio {{ post.category | downcase | replace: " ", "-" }}' data-cat='{{ post.category | downcase | replace: " ", "-" }}'>
+        {% for i in site.portfolio-order %}
+        {% for p in site.portfolio %}
+        {% if i == p.slug %}
+        <div class='portfolio {{ p.category | downcase | replace: " ", "-" }}' data-cat='{{ p.category | downcase | replace: " ", "-" }}'>
             <div class="portfolio-wrapper">
-                <a href="{{ post.feature-img }}" data-lightbox='{{ post.category | downcase | replace: " ", "-" }}' data-order="{{ forloop.index }}"
-                   data-title="<span style='font-weight:bold'>{{ post.title }}</span> • {{ post.category }} • <a href = '{{ site.baseurl }}{{ post.url }}' target='_blank'>Details</a>">
-                    <img src="{{ post.feature-img }}" alt="{{ post.feature-img-alt }}"/>
+                <a href="{{ p.feature-img }}" data-lightbox='{{ p.category | downcase | replace: " ", "-" }}' data-order="{{ forloop.index }}"
+                   data-title="<span style='font-weight:bold'>{{ p.title }}</span> • {{ p.category }} • <a href = '{{ site.baseurl }}{{ p.url }}' target='_blank'>Details</a>">
+                    <img src="{{ p.feature-img }}" alt="{{ p.feature-img-alt }}"/>
                 </a>
                 <div class="label">
                     <div class="label-text">
-                        <a class="text-title">{{ post.title }}</a>
-                        <span class="text-category">{{ post.category }}</span>
+                        <a class="text-title">{{ p.title }}</a>
+                        <span class="text-category">{{ p.category }}</span>
                     </div>
                     <div class="label-bg"></div>
                 </div>
             </div>
         </div>
+        {% endif %}
+        {% endfor %}
         {% endfor %}
     </div>
 </div>

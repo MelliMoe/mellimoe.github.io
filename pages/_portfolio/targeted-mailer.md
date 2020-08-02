@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: Targeted Mailer
 category: Print Design
 feature-img: /assets/img/print/square.jpg

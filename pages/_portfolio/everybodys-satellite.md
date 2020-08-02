@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: Everybody’s Satellite
 category: Illustration
 feature-img: /assets/img/illustration/wishyouweremine.png

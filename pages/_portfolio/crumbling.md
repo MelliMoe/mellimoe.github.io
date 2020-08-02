@@ -1,5 +1,4 @@
 ---
-layout: portfolio
 title: Crumbling
 category: Illustration
 feature-img: /assets/img/illustration/utena-crumbling.jpg
