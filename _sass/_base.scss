@@ -60,6 +60,23 @@ table {
     font-size: 14px;
 }
 
+td,
+th {
+    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.5em 1em; /* cell padding */
+}
+
+thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $purple-black;
@@ -142,6 +159,15 @@ img {
   max-width: 100%;
 }
 
+blockquote {
+  margin: 1.8em .8em;
+  border-left: 2px solid $gray;
+  padding: 0.1em 1em;
+  color: $gray;
+  font-size: 18px;
+  font-style: italic;
+}
+
 .date {
   font-style: italic;
   color: $gray;
@@ -188,7 +214,7 @@ img {
   }
 }
 
-.site-avatar {
+.site-logo {
   float: left;
   width: 70px;
   height: 70px;

@@ -1,42 +1,77 @@
 ---
 title: Contact Me
+description: Contact Moe Moen
 menu-title: Contact
 ---
 
-It's very easy to make some words bold and other words italic with Markdown. You can even link to Google!
+The first paragraph.
 
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
+Another paragraph
 
-*This text will be italic*
-_This will also be italic_
+This is a paragraph  
+which contains a hard line break.
 
-**This text will be bold**
-__This will also be bold__
+# H1 header
 
-_You **can** combine them_
+## H2 header
 
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-  
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
+### H3 header
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+#### H4 header
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+##### H5 header
 
-As Kanye West said:
+###### H6 header
 
-> We're living the future so
-> the present is our past.
+> A sample blockquote.
+>
+> >Nested blockquotes are
+> >also possible.
+>
+> ## Headers work too
+> This is the outer quote again.
 
-I think you should use an `<addr>` element here instead.
+Below are horizontal rules:
+* * *
+
+---
+
+  _  _  _  _
+
+---------------
+
+1. This is a list item
+1. And another item
+   with additional text
+1. This is a list item
+   > with a blockquote
+   # And a header
+1. Followed by another item
+
+Unordered list:
+* Item one
++ Item two
+- Item three
+
+Table:
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+
+This is *emphasized*, _this_ too!
+
+This is **strong**, __this__ too!
+
+A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+
+An image: ![logo](/assets/img/logo.png)
+
+This is a text with a footnote[^1].
+
+[^1]: And here is the footnote.
+
+What does HTML stand for? Hover over it to see!
+
+*[HTML]: Hyper Text Markup Language

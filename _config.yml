@@ -1,17 +1,35 @@
-# Name of site (displayed in the header)
-site-name: MelliMoe
+# Site title (displayed in the header)
+# Used for SEO by default but can be overridden in individual pages
+title: MelliMoe
 
-# Short tagline (displayed in the header)
-site-tagline: The art of Moe Moen
-
-# Longer site description (used for SEO)
+# Site description (displayed in the header)
+# Used for SEO by default but can be overridden in individual pages
 description: The art of Moe Moen
 
-# Author name (used for SEO)
+# Site author
+# Used for SEO by default but can be overridden in individual pages
 author: Shelby Moen
 
-# Path of site logo
-logo:
+# Path of site logo (used for SEO and displayed in the header)
+# Only change the image file itself, not the path!
+logo: /assets/img/logo.png
+
+# Website URL (used for SEO and sitemap.xml generation)
+url: https://mellimoe.github.io
+
+# Add an additional layer to the website URL, like this: "/some-other-name"
+baseurl: ""
+
+# Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
+
+# Specify social profiles for Google (used for SEO)
+social:
+  name: Shelby Moen
+  links:
+    - https://twitter.com/missmellifluous
+    - https://www.linkedin.com/in/shelby-ann-moen
+    - https://instagram.com/melli.moe
 
 # Includes an icon in the footer for each username
 footer-links:
@@ -20,21 +38,13 @@ footer-links:
   linkedin: shelby-ann-moen
   twitter: missmellifluous
 
-# Specify social profiles for Google
-social:
-  name: Shelby Moen
-  links:
-    - https://twitter.com/missmellifluous
-    - https://www.linkedin.com/in/shelby-ann-moen
-    - https://instagram.com/melli.moe
-
 # Ordered list of categories for portfolio posts
 portfolio-categories:
   - Digital Design
   - Print Design
   - Illustration
 
-# Manual collections ordering doesn't work until Github moves to Jekyll4
+# Manual collections ordering doesn't work until Github moves to Jekyll4.0
 # For now there's some nested for loop hack in layouts
 menu-order:
   - about
@@ -49,15 +59,6 @@ portfolio-order:
   - oh-my-stars
   - everybodys-satellite
   - crumbling
-
-# Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Website URL
-url: http://mellimoe.github.io
-
-# Add an additional layer to the website URL, like this: "/some-other-name"
-baseurl: ""
 
 #
 # !! Don't need to change any of the configuration flags below !!
@@ -78,18 +79,20 @@ collections:
     permalink: /:title/
   portfolio:
     output: true
-    permalink: /:collection/:categories/:title/
+    permalink: /:collection/:title/ # Add slugified_categories for Jekyll4.1
 
-# Defaults
+# Front matter defaults
 defaults:
-  -
-    scope:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/logo.png
+  - scope:
       path: ""
       type: "general"
     values:
       layout: "general"
-  -
-    scope:
+  - scope:
       path: ""
       type: "portfolio"
     values:
