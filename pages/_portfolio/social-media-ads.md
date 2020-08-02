@@ -1,8 +1,9 @@
 ---
 title: Social Media Ads
+description: Ad designs for Pacific Living Properties, 2020
 category: Digital Design
-feature-img: /assets/img/digital/victorads.png
-feature-img-alt: Social Media Ads
+image: /assets/img/digital/victorads.png
+image-alt: Social Media Ads
 mode: landscape
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Crumbling
+description: Revolutionary Girl Utena fanart published in Ascending the Staircase, 2018
 category: Illustration
-feature-img: /assets/img/illustration/utena-crumbling.jpg
-feature-img-alt: Crumbling
+image: /assets/img/illustration/utena-crumbling.jpg
+image-alt: Crumbling
 mode: portrait
 ---
 

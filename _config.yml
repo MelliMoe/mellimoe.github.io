@@ -1,11 +1,17 @@
 # Name of site (displayed in the header)
-name: MelliMoe
+site-name: MelliMoe
 
-# Short bio or description (displayed in the header)
+# Short tagline (displayed in the header)
+site-tagline: The art of Moe Moen
+
+# Longer site description (used for SEO)
 description: The art of Moe Moen
 
-# Path of avatar or profile pic
-avatar: /images/avatar.png
+# Author name (used for SEO)
+author: Shelby Moen
+
+# Path of site logo
+logo:
 
 # Includes an icon in the footer for each username
 footer-links:
@@ -13,6 +19,14 @@ footer-links:
   instagram: melli.moe
   linkedin: shelby-ann-moen
   twitter: missmellifluous
+
+# Specify social profiles for Google
+social:
+  name: Shelby Moen
+  links:
+    - https://twitter.com/missmellifluous
+    - https://www.linkedin.com/in/shelby-ann-moen
+    - https://instagram.com/melli.moe
 
 # Ordered list of categories for portfolio posts
 portfolio-categories:

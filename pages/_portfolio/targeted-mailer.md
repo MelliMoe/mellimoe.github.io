@@ -1,8 +1,9 @@
 ---
 title: Targeted Mailer
+description: Work for Coldwell Banker, 2018
 category: Print Design
-feature-img: /assets/img/print/square.jpg
-feature-img-alt: Targeted Mailer
+image: /assets/img/print/square.jpg
+image-at: Targeted Mailer
 mode: landscape
 ---
 

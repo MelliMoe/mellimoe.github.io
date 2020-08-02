@@ -19,9 +19,9 @@ layout: default
         {% if i == p.slug %}
         <div class='portfolio {{ p.category | downcase | replace: " ", "-" }}' data-cat='{{ p.category | downcase | replace: " ", "-" }}'>
             <div class="portfolio-wrapper">
-                <a href="{{ p.feature-img }}" data-lightbox='{{ p.category | downcase | replace: " ", "-" }}' data-order="{{ forloop.index }}"
+                <a href="{{ p.image }}" data-lightbox='{{ p.category | downcase | replace: " ", "-" }}' data-order="{{ forloop.index }}"
                    data-title="<span style='font-weight:bold'>{{ p.title }}</span> • {{ p.category }} • <a href = '{{ site.baseurl }}{{ p.url }}' target='_blank'>Details</a>">
-                    <img src="{{ p.feature-img }}" alt="{{ p.feature-img-alt }}"/>
+                    <img src="{{ p.image }}" alt="{{ p.image-alt }}"/>
                 </a>
                 <div class="label">
                     <div class="label-text">

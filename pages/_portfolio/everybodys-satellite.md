@@ -1,8 +1,9 @@
 ---
 title: Everybody’s Satellite
+description: Personal work, 2019
 category: Illustration
-feature-img: /assets/img/illustration/wishyouweremine.png
-feature-img-alt: Everybody’s Satellite
+image: /assets/img/illustration/wishyouweremine.png
+image-alt: Everybody’s Satellite
 mode: portrait
 ---
 

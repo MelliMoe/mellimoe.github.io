@@ -1,8 +1,9 @@
 ---
 title: Luxury Property Brochure
+description: Brochure design for Coldwell Banker, 2018
 category: Print Design
-feature-img: /assets/img/print/brochure.jpg
-feature-img-alt: Luxury Property Brochure
+image: /assets/img/print/brochure.jpg
+image-alt: Luxury Property Brochure
 mode: landscape
 ---
 
