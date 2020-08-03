@@ -51,8 +51,9 @@ menu-order:
   - contact
 portfolio-order:
   - social-media-ads
-  - communication-flyer
   - opening-day
+  - communication-flyer
+  - loop-flyer
   - luxury-brochure
   - targeted-mailer
   - to-the-moon
@@ -60,6 +61,7 @@ portfolio-order:
   - oh-my-stars
   - everybodys-satellite
   - crumbling
+  - just-peachy
 
 #
 # !! Don't need to change any of the configuration flags below !!
