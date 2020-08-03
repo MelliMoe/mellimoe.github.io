@@ -3,16 +3,15 @@ layout: default
 ---
 
 <div class="image-post {{ page.mode }}">
-    {% if page.image %}
+    {%- if page.image -%}
     <div class="img">
         <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
     </div>
-    {% endif %}
+    {%- endif -%}
     <div class="text">
         <div class="post-title">
             <h2>"{{ page.title }}"</h2>
         </div>
-
         <div class="entry">
         {{ content }}
         </div>
@@ -20,15 +19,15 @@ layout: default
 </div>
 
 <div class="page-nav">
-    {% if page.previous.url %}
+    {%- if page.previous.url -%}
     <div class="prev"><a href="{{page.previous.url}}"><i class="nav-icon arrow-left"></i></a></div>
-    {% else %}
+    {%- else -%}
     <div class="prev">&nbsp;</div>
-    {% endif %}
+    {%- endif -%}
     <div class="home"><a href="{{ site.baseurl }}/"><i class="nav-icon menu"></i></a></div>
-    {% if page.next.url %}
+    {%- if page.next.url -%}
     <div class="next"><a href="{{page.next.url}}"><i class="nav-icon arrow-right"></i></a></div>
-    {% else %}
+    {%- else -%}
     <div class="next">&nbsp;</div>
-    {% endif %}
+    {%- endif -%}
 </div>

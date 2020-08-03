@@ -135,6 +135,8 @@ html {
 	color: $white;
 	text-decoration: none;
 	cursor: pointer;
+	display: block;
+    padding: 5px 8px;
 	&:hover,
 	&:active {
 		color: $white;
@@ -157,7 +159,6 @@ html {
 	position: relative;
 	font-weight: bold;
 	z-index: 500;
-	padding: 5px 8px;
 }
 
 .portfolio .text-category {
