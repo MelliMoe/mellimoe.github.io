@@ -48,7 +48,6 @@ portfolio-categories:
 # For now there's some nested for loop hack in layouts
 menu-order:
   - about
-  - contact
 portfolio-order:
   - social-media-ads
   - opening-day
@@ -89,12 +88,8 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/logo.png
-  - scope:
-      path: ""
-      type: "general"
-    values:
       layout: "general"
+      image: /assets/img/logo.png
   - scope:
       path: ""
       type: "portfolio"

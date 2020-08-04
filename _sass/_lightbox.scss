@@ -382,18 +382,18 @@ body.compensate-for-scrollbar {
     right: env(safe-area-inset-right);
 }
 .fancybox-caption {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.075) 75.5%, rgba(0, 0, 0, 0.037) 82.85%, rgba(0, 0, 0, 0.019) 88%, transparent);
+    //background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 65%, rgba(0, 0, 0, 0.075) 75.5%, rgba(0, 0, 0, 0.037) 82.85%, rgba(0, 0, 0, 0.019) 88%, transparent);
     bottom: 0;
     color: #eee;
-    font-size: 14px;
+    font-size: 16px; //14px before
     font-weight: 400;
     left: 0;
-    line-height: 1.5;
+    line-height: 1; //1.5 before
     padding: 75px 44px 25px;
     pointer-events: none;
     right: 0;
     text-align: center;
-    z-index: 99996;
+    z-index: 9999; //99996 before, reduced so gradient background doesn't obscure .portfolio-caption
 }
 @supports (padding: max(0px)) {
     .fancybox-caption {
@@ -407,6 +407,7 @@ body.compensate-for-scrollbar {
     max-height: 50vh;
     overflow: auto;
     pointer-events: all;
+    visibility: hidden; //show .portfolio-caption instead
 }
 .fancybox-caption a,
 .fancybox-caption a:link,

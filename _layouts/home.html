@@ -14,23 +14,22 @@ layout: default
         {%- for p in site.portfolio -%}
         {%- if i == p.slug -%}
         <div class='portfolio {{ p.category | downcase | replace: " ", "-" }}' data-cat='{{ p.category | downcase | replace: " ", "-" }}'>
-            <div class="portfolio-wrapper">
-                <a class="image-thumb" href="{{ p.image }}" data-fancybox='{{ p.category | downcase | replace: " ", "-" }}'
-                   data-caption="<span style='font-weight:bold'>{{ p.title }}</span> • {{ p.category }} • <a href='{{ site.baseurl }}{{ p.url }}' target='_blank'>Details</a>">
-                    <img src="{{ p.image }}" alt="{{ p.image-alt }}"/>
-                </a>
-                <div class="label">
-                    <div class="label-text">
-                        <a href="{{ site.baseurl }}{{ p.url }}" target="_blank">
-                        <span class="text-title">{{ p.title }}</span>
-                        <span class="text-category">{{ p.category }}</span>
-                        </a>
+            <a title="Image Thumb" class="image-thumb" href="{{ p.image }}" data-fancybox='{{ p.category | downcase | replace: " ", "-" }}'
+               data-caption="<b>{{ p.title }}</b> • {{ p.category }} • <a href='{{ site.baseurl }}{{ p.url }}' target='_blank'>Details</a>">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-img">
+                        <img src='{{ p.image | replace: "fullsize", "thumbs" | split: "." | join: "-thumb." }}' alt="{{ p.image-alt }}"/>
                     </div>
-                    <div class="label-bg"></div>
+                    <div class="label">
+                        <div class="label-text">
+                            <span class="text-title">{{ p.title }}</span>
+                            <span class="text-category">{{ p.category }}</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        {%- endif -%}
+        {%- endif %}
         {%- endfor -%}
         {%- endfor -%}
     </div>

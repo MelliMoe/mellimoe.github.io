@@ -24,12 +24,18 @@ body {
 }
 
 .site-content {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex: 1;
+}
+
+.site-content .container {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  align-items: center;
   align-content: space-between;
-  width: 100%;
-  padding: 1.5em;
   -ms-flex-preferred-size: auto;
 }
 
@@ -42,7 +48,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1440px;
   padding: 0 10px;
   width: 100%;
 }
@@ -202,12 +208,16 @@ blockquote {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  padding: 10px 50px;
+
+  @include mobile {
+    padding: 0 10px;
+  }
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lighterGray;
+  //border-bottom: 1px solid $lighterGray;
 
   @include mobile {
     text-align: center;
@@ -286,6 +296,7 @@ nav {
     @include mobile {
       margin: 0 10px;
       color: $purple-pink;
+      display: inline-block;
     }
   }
 }
@@ -300,36 +311,14 @@ nav {
 
 .page {
   padding: 0 10px;
+  max-width: 940px;
+  width: 100%
 }
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lighterGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 18px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 12px;
-  }
+.page .page-title {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .image-post {
@@ -396,13 +385,29 @@ nav {
 .text .post-title {
   width: 100%;
   min-height: 20px;
-  font-style: italic;
   font-weight: bold;
+}
+
+.text h2.post-title {
+  font-style: italic;
 }
 
 .text .entry {
   width: 100%;
   min-height: 20px;
+}
+
+div.medium {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+div.flexgrow {
+  flex: 1;
+}
+
+div.left-align {
+  text-align: left;
 }
 
 @media screen and (max-width: 600px) {
@@ -413,7 +418,7 @@ nav {
 
   .portrait .img {
     width: 100%;
-    text-align: center;
+    margin: 0 auto;
   }
 
   .portrait .text {
@@ -422,6 +427,11 @@ nav {
     text-align: center;
     align-items: flex-start;
     align-self: flex-start;
+  }
+
+  div.medium {
+    max-width: 350px;
+    margin-right: 0;
   }
 }
 
@@ -459,10 +469,7 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lighterGray;
+  //margin-top: 50px;
 }
 
 footer {

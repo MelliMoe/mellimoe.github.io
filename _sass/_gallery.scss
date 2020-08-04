@@ -3,7 +3,6 @@ html {
 }
 
 .gallery {
-	//background: #efefef url('../img/ticks.png') repeat 0 0;
 	font-family: Helvetica, Arial, Verdana;
 	position: relative;
 	margin: 0 auto;
@@ -16,27 +15,27 @@ html {
 }
 
 #filters {
-    width: 100%;
-    font-size: 14px;
-	margin: 1%;
+    font-size: 16px;
+	margin: 1vw;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 10px;
 
 	@include mobile {
+	    margin: 1vw auto;
 	    text-align: center;
-	    font-size: 16px;
-	    margin: 10px auto;
 	    margin-top: -10px;
 	}
 }
 
 #filters li {
 	float: left;
+	padding-bottom: 10px;
 
 	@include mobile {
         float: none;
         display: inline-block;
-        padding: 10px 0;
+        padding-top: 10px;
     }
 }
 
@@ -67,18 +66,24 @@ html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	width: 23%;
-	height: 200px;
-	margin: 1%;
+	width: calc(min(100vw - 20px, 1420px)/4 - 2vw);
+	height: calc((min(100vw - 20px, 1420px)/4 - 2vw)*5/6 - 1px);
+	margin: 1vw;
 	display: none;
 	float: left;
 	overflow: hidden;
 }
 
 .portfolio-wrapper {
+    height: 100%;
 	overflow: hidden;
-	height: 200px;
 	position: relative !important;
+	cursor: pointer;
+}
+
+.portfolio-img {
+    height: 100%;
+	overflow: hidden;
 	background: $purple;
 	cursor: pointer;
 }
@@ -87,136 +92,119 @@ html {
     width: 100%;
     height: 100%;
 	object-fit: cover;
-	position: relative;
-	top: 0;
-	-webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	-webkit-transition: all 600ms;
+	transition: all 600ms;
 }
 
-/*.portfolio-wrapper:after, .portfolio-wrapper:before {
-    position:absolute;
-    opacity:0;
+.portfolio-img:after, .portfolio-img:before {
+    position: absolute;
+    opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
-.portfolio-wrapper:after {
-    content:'\A';
-    width:100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
+
+.portfolio-img:after {
+    content: '\A';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(104,87,190,0.7);
 }
-//Different kind of label
-.portfolio-wrapper:before {
-    content: attr(data-content);
-    width:100%;
-    color:#fff;
-    z-index:1;
-    bottom:0;
-    padding:4px 10px;
-    text-align:center;
-    background:red;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
+
+.portfolio:hover .portfolio-img:after,
+.portfolio:hover .portfolio-img:before {
+    opacity: 1;
 }
-.portfolio-wrapper:hover:after, .portfolio-wrapper:hover:before {
-    opacity:1;
-}*/
 
 .portfolio .label {
 	position: absolute;
 	width: 100%;
-	height: 40px;
-	bottom: -40px;
-	-webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.portfolio .label a {
-	color: $white;
-	text-decoration: none;
-	cursor: pointer;
-	display: block;
-    padding: 5px 8px;
-	&:hover,
-	&:active {
-		color: $white;
-	}
-	transition: .3s;
-}
-
-.portfolio .label-bg {
-	background: $purple;
-	width: 100%;
 	height: 100%;
-	position: absolute;
 	top: 0;
-	left: 0;
+	text-align: center;
+	transition: all 600ms;
+	opacity: 0;
 }
 
 .portfolio .label-text {
-    font-size: 12px;
 	color: $white;
-	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.portfolio .text-title {
+    font-size: 16px;
 	font-weight: bold;
-	z-index: 500;
+	display: block;
 }
 
 .portfolio .text-category {
 	display: block;
-	font-size: 9px;
+	font-size: 12px;
 }
 
 .portfolio:hover .label {
-	bottom: 0;
+	opacity: 1;
 }
 
 .portfolio:hover img {
-	top: -30px;
+	transform: scale(1.2);
 }
 
-
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.gallery {
-		width: 768px;
-	}
+//https://fancyapps.com/fancybox/3/
+//https://github.com/fancyapps/fancybox/issues/2288
+.portfolio-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  z-index: 99996;
+  pointer-events: none;
+  text-align: center;
+  transition: opacity 200ms;
+  background: none;
+  color: #eee;
 }
 
+.portfolio-caption a,
+.portfolio-caption a:link,
+.portfolio-caption a:visited,
+.portfolio-caption a:hover {
+    color: $purple-light;
+    pointer-events: auto;
+}
 
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1080px) {
 	#portfoliolist .portfolio {
-		width: 48%;
-		margin: 1%;
-	}
-	#portfoliolist .portfolio,
-	.portfolio-wrapper {
-	    height: 300px;
+		width: calc((100vw - 20px)/3 - 2vw);
+		height: calc(((100vw - 20px)/3 - 2vw)*5/6 - 1px);
 	}
 }
 
+@media only screen and (max-width: 720px) {
+	#portfoliolist .portfolio {
+		width: calc((100vw - 20px)/2 - 2vw);
+		height: calc(((100vw - 20px)/2 - 2vw)*5/6 - 1px);
+	}
+}
 
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
 @media only screen and (max-width: 469px) {
 	#filters {
         width: 300px;
     }
-    #portfoliolist .portfolio,
-    .portfolio-wrapper {
-    	height: 160px;
-    }
 }
 
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (max-width: 360px) {
+	#portfoliolist .portfolio {
+		width: calc(100vw - 20px - 2vw);
+		height: calc((100vw - 20px - 2vw)*5/6 - 1px);
+	}
+}
+
 @media only screen and (max-width: 319px) {
-    #portfoliolist .portfolio {
-		width: 98%;
-		margin: 1%;
-	}
-	#portfoliolist .portfolio,
-	.portfolio-wrapper {
-	    height: 275px;
-	}
 	#filters {
         width: 100%;
     }

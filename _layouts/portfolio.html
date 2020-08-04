@@ -3,11 +3,9 @@ layout: default
 ---
 
 <div class="image-post {{ page.mode }}">
-    {%- if page.image -%}
     <div class="img">
         <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
     </div>
-    {%- endif -%}
     <div class="text">
         <div class="post-title">
             <h2>"{{ page.title }}"</h2>
@@ -20,14 +18,14 @@ layout: default
 
 <div class="page-nav">
     {%- if page.previous.url -%}
-    <div class="prev"><a href="{{page.previous.url}}"><i class="nav-icon arrow-left"></i></a></div>
+    <div class="prev"><a title="Previous" href="{{page.previous.url}}"><i class="nav-icon arrow-left"></i></a></div>
     {%- else -%}
-    <div class="prev">&nbsp;</div>
-    {%- endif -%}
-    <div class="home"><a href="{{ site.baseurl }}/"><i class="nav-icon menu"></i></a></div>
+    <div class="prev">&nbsp</div>
+    {%- endif %}
+    <div class="home"><a title="Portfolio" href="{{ site.baseurl }}/"><i class="nav-icon menu"></i></a></div>
     {%- if page.next.url -%}
-    <div class="next"><a href="{{page.next.url}}"><i class="nav-icon arrow-right"></i></a></div>
+    <div class="next"><a title="Next" href="{{page.next.url}}"><i class="nav-icon arrow-right"></i></a></div>
     {%- else -%}
-    <div class="next">&nbsp;</div>
-    {%- endif -%}
+    <div class="next">&nbsp</div>
+    {%- endif %}
 </div>
