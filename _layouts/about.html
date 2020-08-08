@@ -2,16 +2,18 @@
 layout: default
 ---
 
-<div class="image-post portrait">
-    <div class="img medium">
-        <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
-    </div>
-    <div class="text flexgrow">
-        <div class="post-title">
-            <h1>{{ page.title }}</h1>
+<div class="image-post flex-grow">
+    <div class="flex-start portrait">
+        <div class="img medium">
+            <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
         </div>
-        <div class="entry left-align">
-            {{ content }}
+        <div class="text flex-grow">
+            <div class="post-title">
+                <h1>{{ page.title }}</h1>
+            </div>
+            <div class="entry left-align">
+                {{ content }}
+            </div>
         </div>
     </div>
 </div>

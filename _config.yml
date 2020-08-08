@@ -4,7 +4,7 @@ title: MelliMoe
 
 # Site description (displayed in the header)
 # Used for SEO by default but can be overridden in individual pages
-description: The art of Moe Moen
+description: The Art of Moe Moen
 
 # Site author
 # Used for SEO by default but can be overridden in individual pages
@@ -76,7 +76,7 @@ permalink: /:title/
 # Collections for general pages and portfolio posts
 collections_dir: pages
 collections:
-  general:
+  menu:
     output: true
     permalink: /:title/
   portfolio:

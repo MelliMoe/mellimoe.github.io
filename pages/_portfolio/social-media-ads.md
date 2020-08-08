@@ -10,4 +10,3 @@ mode: landscape
 Ad designs for *Pacific Living Properties*, 2020
 
 Stock photo by [Naassom Azevedo](https://unsplash.com/@naassomz1)
-

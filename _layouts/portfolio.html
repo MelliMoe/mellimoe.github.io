@@ -2,30 +2,31 @@
 layout: default
 ---
 
-<div class="image-post {{ page.mode }}">
-    <div class="img">
-        <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
-    </div>
-    <div class="text">
-        <div class="post-title">
-            <h2>"{{ page.title }}"</h2>
+<div class="image-post flex-grow">
+    <div class="flex-start {{ page.mode }}">
+        <div class="img">
+            <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
         </div>
-        <div class="entry">
-        {{ content }}
+        <div class="text">
+            <div class="post-title">
+                <h2>"{{ page.title }}"</h2>
+            </div>
+            <div class="entry">
+            {{ content }}
+            </div>
         </div>
     </div>
 </div>
-
 <div class="page-nav">
-    {%- if page.previous.url -%}
+    {% if page.previous.url -%}
     <div class="prev"><a title="Previous" href="{{page.previous.url}}"><i class="nav-icon arrow-left"></i></a></div>
     {%- else -%}
     <div class="prev">&nbsp</div>
-    {%- endif %}
+    {% endif %}
     <div class="home"><a title="Portfolio" href="{{ site.baseurl }}/"><i class="nav-icon menu"></i></a></div>
-    {%- if page.next.url -%}
+    {% if page.next.url -%}
     <div class="next"><a title="Next" href="{{page.next.url}}"><i class="nav-icon arrow-right"></i></a></div>
     {%- else -%}
     <div class="next">&nbsp</div>
-    {%- endif %}
+    {% endif %}
 </div>

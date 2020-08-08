@@ -6,22 +6,21 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0'>
     <title>{% if page.title and page.title != site.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
-    {%- seo title=false %}
+    {% seo title=false %}
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
-    {%- if page.layout == "home" -%}
+    {% if page.layout == "home" -%}
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" defer></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/gallery.js" defer></script>
     {%- else -%}
     <script type="text/javascript" src="{{ site.baseurl }}/js/widowfix.js" defer></script>
-    {%- endif %}
+    {% endif %}
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png" type="image/png" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
 </head>
-
 <body class="site">
 <div class="wrapper-masthead">
     <div class="container">
@@ -32,24 +31,22 @@
             </div>
             <nav>
                 <a href="{{ site.baseurl }}/">Portfolio</a>
-                {%- for i in site.menu-order -%}
-                {%- for p in site.general -%}
+                {% for i in site.menu-order -%}
+                {%- for p in site.menu -%}
                 {%- if i == p.slug -%}
                 <a href="{{ site.baseurl }}{{ p.url }}">{{ p.menu-title }}</a>
-                {%- endif %}
+                {%- endif -%}
                 {%- endfor -%}
-                {%- endfor -%}
+                {% endfor %}
             </nav>
         </header>
     </div>
 </div>
-
-<div id="wrapper-main" role="main" class="site-content">
+<div id="wrapper-main" role="main" class="site-content flex-grow">
     <div class="container">
     {{ content }}
     </div>
 </div>
-
 <div class="wrapper-footer">
     <div class="container">
         <footer class="footer">
@@ -57,7 +54,6 @@
         </footer>
     </div>
 </div>
-
 {% include analytics.html %}
 </body>
 </html>
