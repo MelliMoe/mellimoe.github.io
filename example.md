@@ -66,7 +66,7 @@ This is **strong**, __this__ too!
 
 A [link](http://kramdown.gettalong.org) to the kramdown homepage.
 
-An image: ![logo](/assets/img/logo.png)
+An image: ![logo](/assets/img/logo.svg)
 
 This is a text with a footnote[^1].
 

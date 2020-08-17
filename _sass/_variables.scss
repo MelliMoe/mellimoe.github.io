@@ -1,11 +1,11 @@
 // Colors
 $blue: #4183C4;
 $bg-color: hsl(150, 45%, 50%);
-$purple: #6857be;
-$purple-dark: #28246b;
-$purple-light: #b3abcf;
-$purple-pink: #d01c8a;
-$purple-black: #150e38;
+$purple: #986edc;
+$purple-dark: #524a90;
+$purple-light: #e1b7ff;
+$purple-pink: #24e0ff;
+$purple-black: #2e264c;
 
 // Grays
 $black: #000;
@@ -22,10 +22,12 @@ $white: #fff;
 @font-face {
   font-family: "coves";
   src: url("../assets/fonts/coves.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: "coves-bold";
   src: url("../assets/fonts/coves-bold.otf");
+  font-display: swap;
 }
 $coves: "coves", Helvetica, Arial, sans-serif;
 $coves-bold: "coves-bold", Helvetica, Arial, sans-serif;

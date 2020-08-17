@@ -11,14 +11,19 @@ layout: default
     </ul>
     <div id="portfoliolist">
         {% for i in site.portfolio-order -%}
+        {%- assign outer_forloop = forloop -%}
         {%- for p in site.portfolio -%}
         {%- if i == p.slug -%}
         <div class='portfolio {{ p.category | downcase | replace: " ", "-" }}' data-cat='{{ p.category | downcase | replace: " ", "-" }}'>
-            <a title="Image Thumb" class="image-thumb" href="{{ p.image }}" data-fancybox='{{ p.category | downcase | replace: " ", "-" }}'
-               data-caption="<b>{{ p.title }}</b> • {{ p.category }} • <a href='{{ site.baseurl }}{{ p.url }}' target='_blank'>Details</a>">
+            <a title="{{ p.image-alt }}" class="image-thumb" href="{{ p.image }}" data-fancybox='{{ p.category | downcase | replace: " ", "-" }}'
+               data-caption="<p><b>{{ p.title }}</b> • {{ p.category }}</p><p><a href='{{ site.baseurl }}{{ p.url }}' target='_blank'>Learn More</a></p>">
                 <div class="portfolio-wrapper">
                     <div class="portfolio-img">
+                        {% if outer_forloop.index > 4 -%}
+                        <img class="lazyload" data-src='{{ p.image | replace: "fullsize", "thumbs" | split: "." | join: "-thumb." }}' alt="{{ p.image-alt }}"/>
+                        {%- else -%}
                         <img src='{{ p.image | replace: "fullsize", "thumbs" | split: "." | join: "-thumb." }}' alt="{{ p.image-alt }}"/>
+                        {% endif %}
                     </div>
                     <div class="label">
                         <span class="text-title">{{ p.title }}</span>

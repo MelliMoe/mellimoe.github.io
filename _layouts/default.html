@@ -14,6 +14,7 @@
     {% if page.layout == "home" -%}
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" defer></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" async></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/gallery.js" defer></script>
     {%- else -%}
     <script type="text/javascript" src="{{ site.baseurl }}/js/widowfix.js" defer></script>
@@ -25,6 +26,7 @@
 <div class="wrapper-masthead">
     <div class="container">
         <header class="masthead clearfix">
+            {% include svg-logo.html %}
             <div class="site-info">
                 <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
                 <p class="site-description">{{ site.description }}</p>

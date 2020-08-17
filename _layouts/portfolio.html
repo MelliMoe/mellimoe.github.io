@@ -4,12 +4,12 @@ layout: default
 
 <div class="image-post flex-grow">
     <div class="flex-start {{ page.mode }}">
-        <div class="img">
+        <div class="img museum-piece">
             <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
         </div>
-        <div class="text">
+        <div class="text museum-plaque">
             <div class="post-title">
-                <h2>"{{ page.title }}"</h2>
+                <h2>"{{ page.title | replace: " ", "&nbsp;" }}"</h2>
             </div>
             <div class="entry">
             {{ content }}
