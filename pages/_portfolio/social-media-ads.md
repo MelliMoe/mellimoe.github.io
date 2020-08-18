@@ -2,11 +2,13 @@
 title: Social Media Ads
 description: Ad designs for Pacific Living Properties, 2020
 category: Digital Design
+year: 2020
+medium: Oil on canvas
 image: /assets/img/fullsize/social-ad.png
 image-alt: Social Media Ads
 mode: landscape
 ---
 
-Ad designs for *Pacific Living Properties*, 2020
+Ad designs for *Pacific Living Properties*
 
 Stock photo by [Naassom Azevedo](https://unsplash.com/@naassomz1)

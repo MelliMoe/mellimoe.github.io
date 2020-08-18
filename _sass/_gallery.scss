@@ -3,9 +3,6 @@
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
 	transition: all 1s ease;
 	margin-bottom: -25px;
 	text-align: center;
@@ -21,6 +18,7 @@
 
 #filters {
     font-size: 14px;
+    font-weight: 400;
     text-transform: uppercase;
 	text-align: center;
 	padding: 0 20px;
@@ -54,15 +52,16 @@
 }
 
 #portfoliolist .portfolio {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	width: calc(1440px/4); //calc(min(100vw - 20px, 1420px)/4)
-	height: calc(1440px/4*5/6); //calc(min(100vw - 20px, 1420px)/4*5/6)
+	width: calc(1440px/4); //calc(min(100% - 20px, 1420px)/4)
+	height: auto;
 	margin: 0;
 	display: none;
 	float: left;
 	overflow: hidden;
+}
+
+.image-thumb {
+    line-height: 0;
 }
 
 .portfolio-wrapper {
@@ -92,7 +91,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(104,87,190,0.7);
+    background: rgba(82, 74, 144, 0.7);
 }
 
 .portfolio:hover .portfolio-img:after,
@@ -109,6 +108,7 @@
 	transition: all 600ms;
 	opacity: 0;
 	color: $white;
+	line-height: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,53 +140,26 @@
 	transform: scale(1.2);
 }
 
-//https://fancyapps.com/fancybox/3/
-//https://github.com/fancyapps/fancybox/issues/2288
-.portfolio-caption {
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -30px;
-  z-index: 99996;
-  pointer-events: none;
-  text-align: center;
-  transition: opacity 200ms;
-  background: none;
-  color: #eee;
-}
-
-.portfolio-caption a,
-.portfolio-caption a:link,
-.portfolio-caption a:visited,
-.portfolio-caption a:hover {
-    color: $purple-light;
-    pointer-events: auto;
-}
-
 //Needed because firefox doesn't support min()
 @media only screen and (max-width: 1440px) {
 	#portfoliolist .portfolio {
-		width: calc(100vw/4);
-		height: calc(100vw/4*5/6);
+		width: calc(100%/4);
 	}
 }
 
 @media only screen and (max-width: 1080px) {
 	#portfoliolist .portfolio {
-		width: calc(100vw/3);
-		height: calc(100vw/3*5/6);
+		width: calc(100%/3);
 	}
 }
 
 @media only screen and (max-width: 720px) {
 	#portfoliolist .portfolio {
-		width: calc(100vw/2);
-		height: calc(100vw/2*5/6);
+		width: calc(100%/2);
 	}
 }
 
-@media only screen and (max-width: 519px) {
+@media only screen and (max-width: 520px) {
 	#filters {
         width: 350px;
     }
@@ -200,8 +173,7 @@
         width: 100%;
     }
 	#portfoliolist .portfolio {
-		width: 100vw;
-		height: calc(100vw*5/6);
+		width: 100%;
 	}
 }
 
