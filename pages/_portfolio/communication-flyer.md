@@ -1,11 +1,11 @@
 ---
 title: Communication Flyer
 description: Internal flyer created for Pacific Living Properties, 2020
-category: Print Design
+categories: [Print Design]
 year: 2020
-medium: Oil on canvas
+medium: Photoshop
+type: image
 image: /assets/img/fullsize/internal-flyer.png
-image-alt: Communication Flyer
 mode: portrait
 ---
 

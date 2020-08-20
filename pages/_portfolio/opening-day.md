@@ -1,11 +1,11 @@
 ---
 title: Opening Day
 description: Social media content for Holland Team powered by Listings.com, 2019
-category: Digital Design
+categories: [Digital Design]
 year: 2019
-medium: Oil on canvas
+medium: Photoshop
+type: image
 image: /assets/img/fullsize/social-post.png
-image-alt: Opening Day
 mode: portrait
 ---
 

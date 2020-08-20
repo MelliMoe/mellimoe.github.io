@@ -1,11 +1,11 @@
 ---
 title: Targeted Mailer
 description: Work for Coldwell Banker, 2018
-category: Print Design
+categories: [Print Design]
 year: 2018
-medium: Oil on canvas
+medium: Photoshop
+type: image
 image: /assets/img/fullsize/targeted-mailer.png
-image-alt: Targeted Mailer
 mode: landscape
 ---
 

@@ -5,7 +5,15 @@ layout: default
 <div class="image-post flex-grow">
     <div class="flex-start {{ page.mode }}">
         <div class="img museum-piece">
-            <img src="{{ page.image }}" alt="{{ page.image-alt }}"/>
+            {%- if page.type == "image" -%}
+            <img src="{{ page.image }}" alt="{{ page.description }}"/>
+            {%- else -%}
+            {% assign path = page.image | replace: "img/fullsize", "docs" | split: "." | first | append: ".pdf" %}
+            {% assign iframe_source = "https://docs.google.com/gview?url=" | append: site.url | append: path | append: "&embedded=true" %}
+            {% assign link_source = "https://docs.google.com/viewerng/viewer?url=" | append: site.url | append: path %}
+            <p>PDF not loading? Click <a href="{{ link_source }}" target="_blank">here</a> to view it in a separate page!</p>
+            <iframe src="{{ iframe_source }}" frameborder="0" title="{{ page.title }}"></iframe>
+            {%- endif -%}
         </div>
         <div class="text museum-plaque">
             <div class="post-title">
@@ -36,7 +44,8 @@ layout: default
                 {% for p in site.portfolio -%}
                 <li class="{% if p.url == page.url %}current{% endif %}">
                     <a title="{{ p.title }}" href="{{ site.baseurl }}{{ p.url }}">
-                        <img class="lazyload" src='{{ p.image | replace: "fullsize", "thumbs-min" | split: "." | first | append: "-min.jpg" }}' data-src='{{ p.image | replace: "fullsize", "thumbs" | split: "." | join: "-thumb." }}' alt="{{ p.image-alt }}"/>
+                        <img class="lazyload" src="{{ p.image | replace: 'fullsize', 'thumbs-min' | split: '.' | first | append: '-min.jpg' }}"
+                             data-src="{{ p.image | replace: 'fullsize', 'thumbs' | split: '.' | join: '-thumb.' }}" alt="{{ p.description }}"/>
                     </a>
                 </li>
                 {% endfor %}

@@ -285,12 +285,14 @@ nav {
 	justify-content: center;
 	align-content: flex-start;
 	flex-direction: row;
+	width: 100%;
 }
 
 .landscape {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	width: 100%;
 }
 
 .landscape .img {
@@ -306,7 +308,8 @@ nav {
 	max-width: 60%;
 }
 
-.museum-piece img {
+.museum-piece img,
+.museum-piece iframe {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	box-shadow: 0 -20px 0px -5px $lighterGray, 0 20px 0px -5px $lighterGray;
@@ -316,6 +319,12 @@ nav {
 	width: auto;
 	height: auto;
 	object-fit: contain;
+}
+
+.img iframe {
+	width: 100%;
+	height: auto;
+	min-height: 600px;
 }
 
 .text {
@@ -387,6 +396,12 @@ nav {
     max-width: 320px;
 }
 
+.landscape .entry-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media screen and (max-width: 640px) {
 	.portrait {
 		flex-direction: column;
@@ -407,6 +422,10 @@ nav {
 		max-width: 350px;
 		margin-right: 0;
 	}
+	.entry-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .page-nav {
