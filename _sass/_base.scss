@@ -418,9 +418,10 @@ nav {
 		align-items: flex-start;
 		align-self: flex-start;
 	}
-	.medium {
+	.img.medium {
 		max-width: 350px;
-		margin-right: 0;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	.entry-description {
         margin-left: auto;
