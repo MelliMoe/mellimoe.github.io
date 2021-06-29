@@ -49,6 +49,8 @@ portfolio-categories:
 menu-order:
   - about
 portfolio-order:
+  - fccl
+  - instagram-stories
   - social-media-ads
   - opening-day
   - sellers-guide
