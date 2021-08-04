@@ -1,0 +1,11 @@
+---
+title: Pokémon x Tropical Rouge Precure
+description: Pokémon x Tropical Rouge Precure fanart, 2021
+categories: [Illustration]
+year: 2021
+medium: Photoshop
+type: image
+image: /assets/img/fullsize/pokemon-topical.png
+mode: portrait
+---
+Pokémon x Tropical Rouge Precure fanart
