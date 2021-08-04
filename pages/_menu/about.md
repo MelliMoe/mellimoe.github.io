@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me
+title: About
 description: About Moe Moen
 menu-title: About
 image: /assets/img/bioupdate.png
