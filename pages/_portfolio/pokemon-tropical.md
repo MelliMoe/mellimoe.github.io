@@ -5,7 +5,7 @@ categories: [Illustration]
 year: 2021
 medium: Photoshop
 type: image
-image: /assets/img/fullsize/pokemon-topical.png
+image: /assets/img/fullsize/pokemon-tropical.png
 mode: portrait
 ---
 Pokémon x Tropical Rouge Precure fanart
