@@ -1,10 +1,10 @@
 ---
 layout: about
 title: About
-description: About Moe Moen
+description: About Shelby "Moe" Moen
 menu-title: About
 image: /assets/img/bioupdate.png
-image-alt: Shelby Moen
+image-alt: Shelby "Moe" Moen
 ---
 
 Shelby "Moe" Moen is a digital marketer + artist living and working in Seattle.  Originally from Denver, she earned a BA in Communications from the University of Colorado, and later an MA in Digital Marketing and Design from Regis University, graduating with honors.
