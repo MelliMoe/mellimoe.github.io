@@ -21,18 +21,7 @@ url: https://mellimoe.github.io
 baseurl: ""
 
 # Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L94SKQV3YR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L94SKQV3YR');
-</script>
-
-Google Tag Manager icon
-Google Tag Manager 
+google_analytics: G-L94SKQV3YR
 
 # Specify social profiles for Google (used for SEO)
 social:
