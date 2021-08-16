@@ -100,7 +100,7 @@ defaults:
       path: ""
     values:
       layout: "general"
-      image: &logo
+      image: *logo
   - scope:
       path: ""
       type: "portfolio"
