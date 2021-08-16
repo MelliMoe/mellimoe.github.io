@@ -10,9 +10,13 @@ description: The Art of Moe Moen
 # Used for SEO by default but can be overridden in individual pages
 author: Shelby Moen
 
-# Path of site logo (used for SEO and displayed in the header)
+# Path of site logo (used for SEO)
 # Only change the image file itself, not the path!
-logo: /assets/img/logo.svg
+logo: /assets/img/seo-logo.svg
+
+# Path of site logo (displayed in the site banner/header)
+# Only change the image file itself, not the path!
+site-logo: /assets/img/logo.svg
 
 # Website URL (used for SEO and sitemap.xml generation)
 url: https://mellimoe.github.io
@@ -21,7 +25,7 @@ url: https://mellimoe.github.io
 baseurl: ""
 
 # Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: G-L94SKQV3YR
 
 # Specify social profiles for Google (used for SEO)
 social:
