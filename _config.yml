@@ -12,7 +12,7 @@ author: Shelby Moen
 
 # Path of site logo (used for SEO)
 # Only change the image file itself, not the path!
-logo: /assets/img/seo-logo.svg
+logo: &logo /assets/img/seo-logo.svg
 
 # Path of site logo (displayed in the site banner/header)
 # Only change the image file itself, not the path!
@@ -100,7 +100,7 @@ defaults:
       path: ""
     values:
       layout: "general"
-      image: !ref logo
+      image: &logo
   - scope:
       path: ""
       type: "portfolio"
