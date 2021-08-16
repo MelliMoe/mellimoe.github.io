@@ -100,7 +100,7 @@ defaults:
       path: ""
     values:
       layout: "general"
-      image: /assets/img/logo.png
+      image: !ref logo
   - scope:
       path: ""
       type: "portfolio"
