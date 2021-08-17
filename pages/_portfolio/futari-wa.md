@@ -8,4 +8,4 @@ type: image
 image: /assets/img/fullsize/futari-wa.png
 mode: portrait
 ---
-Cover art for the Futari Wa Precast Podcast
+Cover art commission for the Futari Wa Precast Podcast
