@@ -108,6 +108,10 @@ defaults:
       type: "portfolio"
     values:
       layout: "portfolio"
+  - scope:
+      path: "assets/**/*.pdf"
+    values:
+      sitemap: false
 
 # Set the Sass partials directory
 sass:
