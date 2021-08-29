@@ -19,7 +19,7 @@ logo: &logo /assets/img/seo-logo.png
 site-logo: /assets/img/logo.svg
 
 # Website URL (used for SEO and sitemap.xml generation)
-url: https://mellimoe.github.io
+url: https://mellimoe.com
 
 # Add an additional layer to the website URL, like this: "/some-other-name"
 baseurl: ""
