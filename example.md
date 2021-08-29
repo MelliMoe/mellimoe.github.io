@@ -2,6 +2,7 @@
 title: Contact Me
 description: Contact Moe Moen
 menu-title: Contact
+sitemap: false
 ---
 
 The first paragraph.
