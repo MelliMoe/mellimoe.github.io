@@ -60,6 +60,7 @@
 
 #portfoliolist .portfolio {
 	width: calc(1440px/4); //calc(min(100% - 20px, 1420px)/4)
+	aspect-ratio: 6/5;
 	height: auto;
 	margin: 0;
 	display: none;
