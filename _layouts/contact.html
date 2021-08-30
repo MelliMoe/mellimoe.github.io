@@ -9,40 +9,40 @@ layout: default
     <div class="entry left-align page-content">
         {{ content }}
     </div>
-</div>
 
-<form class="gform form form-stacked" method="POST"
-      action="https://script.google.com/macros/s/AKfycbw2YqGRTAy7SlFlfKxJNlagC1PIFOKSqm9IGTK1VJVyDZAuQsCFxIWhLrq7E8tMZuaPcg/exec">
+    <form class="gform form form-stacked" method="POST"
+          action="https://script.google.com/macros/s/AKfycbw2YqGRTAy7SlFlfKxJNlagC1PIFOKSqm9IGTK1VJVyDZAuQsCFxIWhLrq7E8tMZuaPcg/exec">
 
-    <div class="form-elements">
-        <fieldset class="form-group">
-            <label for="name">Name: </label>
-            <input id="name" name="name" placeholder="Your Name" />
-        </fieldset>
+        <div class="form-elements">
+            <fieldset class="form-group">
+                <label for="name">Name: </label>
+                <input id="name" name="name" placeholder="Your Name" />
+            </fieldset>
 
-        <fieldset class="form-group">
-            <label for="message">Message: </label>
-            <textarea id="message" name="message" rows="10" placeholder="Your message..."></textarea>
-        </fieldset>
+            <fieldset class="form-group">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="10" placeholder="Your message..."></textarea>
+            </fieldset>
 
-        <fieldset class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" value="" required placeholder="your.email@domain.com"/>
-        </fieldset>
+            <fieldset class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" value="" required placeholder="your.email@domain.com"/>
+            </fieldset>
 
-        <fieldset class="form-group honeypot-field">
-            <label for="honeypot">honeypot</label>
-            <input id="honeypot" type="text" name="honeypot" value="" />
-        </fieldset>
+            <fieldset class="form-group honeypot-field">
+                <label for="honeypot">honeypot</label>
+                <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
 
-        <button class="button-success form-button button-xlarge">
-            <i class="fa fa-paper-plane"></i>&nbsp;Send
-        </button>
-    </div>
+            <button class="form-button">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send
+            </button>
+        </div>
+    </form>
 
     <div class="thanks">
         <p>Thanks for contacting me! I will get back to you soon!</p>
     </div>
-</form>
+</div>
 
 <script src="{{ site.baseurl }}/js/contact.js" type="text/javascript"></script>
