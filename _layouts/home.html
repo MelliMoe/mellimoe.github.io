@@ -20,7 +20,7 @@ layout: default
             {% assign path = p.image | replace: "img/fullsize", "docs" | split: "." | first | append: ".pdf" %}
             {% assign source = "https://docs.google.com/gview?url=" | append: site.url | append: path | append: "&embedded=true" %}
             {%- endif -%}
-            <a title="{{ p.title }}" class="image-thumb" href="{{ source }}" data-fancybox="gallery" data-type="{{ p.type | replace: 'pdf', 'iframe' }}"
+            <a title="{{ p.title }}, {{ p.categories | join: ', ' }}" class="image-thumb" href="{{ source }}" data-fancybox="gallery" data-type="{{ p.type | replace: 'pdf', 'iframe' }}"
                data-caption="<p><b>{{ p.title }}</b> • {{ p.categories | join: ' • ' }}</p><p><a href='{{ site.baseurl }}{{ p.url }}' target='_blank'>Learn More</a></p>">
                 <div class="portfolio-wrapper">
                     <div class="portfolio-img">
