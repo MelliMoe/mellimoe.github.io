@@ -18,7 +18,8 @@
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
-    font: 14px $montserrat;
+    font-size: 14px;
+    font-family: inherit;
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid $lightGray;
@@ -29,11 +30,14 @@
 }
 
 .form input:not([type]) {
+    font-size: 14px;
+    font-family: inherit;
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid $lightGray;
     box-shadow: inset 0 1px 3px $lighterGray;
     border-radius: 4px;
+    vertical-align: middle;
     box-sizing: border-box;
 }
 
@@ -79,6 +83,9 @@
 }
 
 .form label {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
     margin: 0.5em 0 0.2em;
 }
 
@@ -101,7 +108,6 @@
     margin: 0.25em 0;
 }
 
-/* Grouped Inputs */
 .form .form-group fieldset {
     margin-bottom: 10px;
 }
