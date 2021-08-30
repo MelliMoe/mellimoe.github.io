@@ -25,7 +25,8 @@ layout: default
                 <div class="portfolio-wrapper">
                     <div class="portfolio-img">
                         <img class="lazyload" src="{{ p.image | replace: 'fullsize', 'thumbs-min' | split: '.' | first | append: '-min.jpg' }}"
-                             data-src="{{ p.image | replace: 'fullsize', 'thumbs' | split: '.' | join: '-thumb.' }}" alt="{{ p.description }}"/>
+                             data-src="{{ p.image | replace: 'fullsize', 'thumbs' | split: '.' | join: '-thumb.' }}" alt="{{ p.description }}"
+                             width="360px" height="300px" />
                     </div>
                     <div class="label">
                         <h3 class="text-title">{{ p.title }}</h3>
