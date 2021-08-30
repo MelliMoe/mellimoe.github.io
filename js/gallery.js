@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var mixer = mixitup('#portfoliolist', {
 		selectors: {
 			target: ".portfolio",
-			filter: ".filter"
+			control: ".filter"
 		}
 	});
 	$("[data-fancybox]").fancybox({
