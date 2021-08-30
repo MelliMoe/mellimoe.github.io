@@ -1,3 +1,7 @@
+.form {
+    width: 100%;
+}
+
 .form input[type="text"],
 .form input[type="password"],
 .form input[type="email"],
@@ -209,7 +213,8 @@
 .form .form-group textarea:first-child {
     top: 1px;
     border-radius: 4px 4px 0 0;
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 .form .form-group input:first-child:last-child,
 .form .form-group textarea:first-child:last-child {
