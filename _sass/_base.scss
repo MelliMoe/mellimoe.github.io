@@ -49,11 +49,11 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 24px;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 20px;
 }
 
 h4 {
@@ -344,6 +344,10 @@ nav {
 	background: $white;
 	box-shadow: 0px 0px 20px $lighterGray;
 	width: 100%;
+}
+
+.museum-plaque h2 {
+	font-size: 20px;
 }
 
 .portrait .text {
