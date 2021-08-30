@@ -63,6 +63,7 @@
 
     var loader = form.querySelector('.loader');
     if (loader) {
+      loader.style.display = "flex";
       loader.classList.add('active');
     }
 
