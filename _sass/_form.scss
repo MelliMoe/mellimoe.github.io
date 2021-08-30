@@ -226,7 +226,6 @@
 .form .form-group textarea:first-child {
     top: 1px;
     border-radius: 4px 4px 0 0;
-    width: 100%;
 }
 .form .form-group input:first-child:last-child,
 .form .form-group textarea:first-child:last-child {
@@ -239,6 +238,7 @@
     top: -2px;
     border-radius: 0 0 4px 4px;
     margin: 0;
+    width: 100%;
 }
 .form .form-group button {
     margin: 0.35em 0;
@@ -294,6 +294,7 @@
 .form-button:hover,
 .form-button:focus {
     background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    cursor: pointer;
 }
 .form-button:focus {
     outline: 0;
