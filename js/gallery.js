@@ -1,5 +1,8 @@
 $(document).ready(function() {
 	var mixer = mixitup('#portfoliolist', {
+        animation: {
+            effects: 'fade scale'
+        },
 		selectors: {
 			target: ".portfolio",
 			control: ".filter"
