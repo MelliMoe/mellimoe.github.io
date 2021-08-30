@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#portfoliolist").mixItUp({selectors:{target:".portfolio",filter:".filter"}}),$("[data-fancybox]").fancybox({selector:"a.image-thumb:visible",loop:!0,hash:!0,buttons:["thumbs","close"],transitionEffect:"slide",preventCaptionOverlap:!0})});
+$(".filter" ).click(function(){$("#portfoliolist").mixItUp({selectors:{target:".portfolio",filter:".filter"}}),$("[data-fancybox]").fancybox({selector:"a.image-thumb:visible",loop:!0,hash:!0,buttons:["thumbs","close"],transitionEffect:"slide",preventCaptionOverlap:!0})});
