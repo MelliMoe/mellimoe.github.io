@@ -17,9 +17,6 @@
 }
 
 #filters {
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
 	text-align: center;
 	padding: 0 20px;
 	list-style: none;
@@ -34,7 +31,11 @@
 	padding: 10px;
 }
 
-#filters li span {
+#filters li span,
+#filters li h2 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
 	display: block;
 	padding: 5px;
 	text-decoration: none;
@@ -43,11 +44,13 @@
 	transition: .3s;
 }
 
-#filters li span:hover {
+#filters li span:hover,
+#filters li h2:hover {
     color: $purple;
 }
 
-#filters li span.active {
+#filters li span.active,
+#filters li h2:active {
 	color: $purple;
 }
 
@@ -163,7 +166,8 @@
 	#filters {
         width: 350px;
     }
-    #filters li span {
+    #filters li span,
+    #filters li h2 {
         display: inline-block;
     }
 }
