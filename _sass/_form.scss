@@ -217,6 +217,7 @@
     border-radius: 0;
     position: relative;
     top: -1px;
+    width: 100%;
 }
 .form .form-group input:focus,
 .form .form-group textarea:focus {
@@ -238,7 +239,6 @@
     top: -2px;
     border-radius: 0 0 4px 4px;
     margin: 0;
-    width: 100%;
 }
 .form .form-group button {
     margin: 0.35em 0;

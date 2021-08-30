@@ -5,4 +5,6 @@ description: Contact Shelby Moen
 menu-title: Contact
 ---
 
-This page is a contact form.
+I would <em>love</em> to hear from you!
+
+Please use the form below to send me a message =)
