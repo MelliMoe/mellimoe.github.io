@@ -335,6 +335,11 @@ nav {
 	min-height: 100px;
 }
 
+.contact .text {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .museum-plaque {
 	padding: 10px 20px 0px 20px;
 	background: $white;
