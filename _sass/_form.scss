@@ -1,5 +1,18 @@
 .form {
-    width: 100%;
+    width: 600px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 640px) {
+	.form {
+        width: calc(100vw - 40px);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .form {
+        width: calc(100vw - 20px);
+    }
 }
 
 .form input[type="text"],
@@ -213,8 +226,7 @@
 .form .form-group textarea:first-child {
     top: 1px;
     border-radius: 4px 4px 0 0;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
 }
 .form .form-group input:first-child:last-child,
 .form .form-group textarea:first-child:last-child {
