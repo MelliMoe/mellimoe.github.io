@@ -37,7 +37,6 @@ social:
 
 # Includes an icon in the footer for each username
 footer-links:
-  email: shelbyamoen@gmail.com
   instagram: melli.moe
   linkedin: shelby-ann-moen
   twitter: missmellifluous
@@ -52,6 +51,7 @@ portfolio-categories:
 # For now there's some nested for loop hack in layouts
 menu-order:
   - about
+  - contact
 portfolio-order:
   - fccl
   - savings-ad
