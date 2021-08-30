@@ -33,7 +33,11 @@
         <header class="masthead clearfix">
             {% include svg-logo.html %}
             <div class="site-info">
+                {% if page.layout == "home" -%}
                 <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                {%- else -%}
+                <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
+                {% endif %}
                 <p class="site-description">{{ site.description }}</p>
             </div>
             <nav>

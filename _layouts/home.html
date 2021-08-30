@@ -6,7 +6,7 @@ layout: default
     <ul id="filters" class="clearfix">
         <li><span class="filter active" data-filter="all">All</span></li>
         {% for c in site.portfolio-categories -%}
-        <li><span class="filter" data-filter=".{{ c | downcase | replace: ' ', '-' }}">{{ c }}</span></li>
+        <li><h2 class="filter" data-filter=".{{ c | downcase | replace: ' ', '-' }}">{{ c }}</h2></li>
         {% endfor %}
     </ul>
     <div id="portfoliolist">
