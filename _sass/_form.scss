@@ -21,7 +21,7 @@
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid $lightGray;
-    box-shadow: inset 0 1px 3px $purple-light;
+    box-shadow: inset 0 1px 3px $lighterGray;
     border-radius: 4px;
     vertical-align: middle;
     box-sizing: border-box;
@@ -31,7 +31,7 @@
     padding: 0.5em 0.6em;
     display: inline-block;
     border: 1px solid $lightGray;
-    box-shadow: inset 0 1px 3px $purple-light;
+    box-shadow: inset 0 1px 3px $lighterGray;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -41,11 +41,13 @@
 .form textarea:focus {
     outline: 0;
     border-color: $purple;
+    box-shadow: inset 0 1px 3px $purple-light;
 }
 
 .form input:not([type]):focus {
     outline: 0;
     border-color: $purple;
+    box-shadow: inset 0 1px 3px $purple-light;
 }
 
 .form input[type="text"][disabled],
