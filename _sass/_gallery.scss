@@ -54,8 +54,10 @@
 	color: $purple;
 }
 
-#portfoliolist {
+#portfoliolist:after {
+    content: '';
     display: inline-block;
+    width: 100%;
 }
 
 #portfoliolist .portfolio {
