@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% if site.google_analytics %}
-    {% include analytics.html %}
-    {%- endif -%}
     <meta charset="utf-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
     {% endif %}
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
+    {% if site.google_analytics %}
+    {% include analytics.html %}
+    {%- endif -%}
 </head>
 <body class="site">
 <div class="wrapper-masthead">
