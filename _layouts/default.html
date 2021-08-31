@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% if site.google_analytics %}
+    {% include analytics.html %}
+    {%- endif -%}
     <meta charset="utf-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,9 +60,6 @@
                 {%- endfor -%}
                 {% endfor %}
             </nav>
-            {% if site.google_analytics %}
-            {% include analytics.html %}
-            {% endif %}
         </header>
     </div>
 </div>
