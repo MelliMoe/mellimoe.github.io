@@ -24,7 +24,14 @@
     <link rel="dns-prefetch preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" as="font" href="{{ site.baseurl }}/assets/fonts/coves.otf" type="font/otf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css" />
+    {% if page.layout == "home" -%}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/home.css" />
+    <link rel="preload" href="portfolio.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="portfolio.css"></noscript>
+    {%- else -%}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css" />
+    {% endif %}
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png" type="image/png" />
 </head>
 <body class="site">
