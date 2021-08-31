@@ -8,14 +8,6 @@
 	text-align: center;
 }
 
-.gallery:after {
-	content: "\0020";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
 #filters {
 	text-align: center;
 	padding: 0 20px;
@@ -55,9 +47,11 @@
 }
 
 #portfoliolist:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
 #portfoliolist .portfolio {
