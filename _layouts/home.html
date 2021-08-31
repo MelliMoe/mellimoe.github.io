@@ -24,7 +24,7 @@ layout: default
                data-caption="<p><b>{{ p.title }}</b> • {{ p.categories | join: ' • ' }}</p><p><a href='{{ site.baseurl }}{{ p.url }}' target='_blank'>Learn More</a></p>">
                 <div class="portfolio-wrapper">
                     <div class="portfolio-img">
-                        <img class="{%- if i >= 1 -%}lazyload{%- endif -%}" src="{{ p.image | replace: 'fullsize', 'thumbs-min' | split: '.' | first | append: '-min.jpg' }}"
+                        <img class="{%- if forloop.index > 1 -%}lazyload{%- endif -%}" src="{{ p.image | replace: 'fullsize', 'thumbs-min' | split: '.' | first | append: '-min.jpg' }}"
                              data-src="{{ p.image | replace: 'fullsize', 'thumbs' | split: '.' | join: '-thumb.' }}" alt="{{ p.description }}"
                              width="360px" height="300px" />
                     </div>
