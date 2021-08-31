@@ -26,6 +26,7 @@ baseurl: ""
 
 # Enter Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: G-L94SKQV3YR
+universal_analytics: UA-204799903-1
 
 # Specify social profiles for Google (used for SEO)
 social:
