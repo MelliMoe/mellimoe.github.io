@@ -1,6 +1,6 @@
 ---
 title: Counting Wooloo
-description: Pokemon Sword and Shield wooloo fanart, 2019
+description: Pokémon Sword and Shield wooloo fanart, 2019. Illustration in Photoshop.
 categories: [Illustration]
 year: 2019
 medium: Photoshop
@@ -9,4 +9,4 @@ image: /assets/img/fullsize/wooloo.png
 mode: portrait
 ---
 
-Pokemon Sword and Shield fanart
+Pokémon Sword and Shield fanart

@@ -1,7 +1,7 @@
 ---
 layout: contact
 title: Contact
-description: Contact Shelby Moen
+description: Contact Shelby Moen, digital marketer and artist
 menu-title: Contact
 ---
 

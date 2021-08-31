@@ -1,6 +1,6 @@
 ---
 title: Seller's Guide
-description: Comprehensive guide for sellers at Holland Team powered by Listings.com, 2019
+description: Comprehensive guide for sellers at Holland Team powered by Listings.com, 2019. Digital and print design in Illustrator.
 categories: [Digital Design, Print Design]
 year: 2019
 medium: Illustrator

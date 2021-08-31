@@ -1,6 +1,6 @@
 ---
 title: App Store Screenshots
-description: App store screenshots for Nanno, 2019
+description: App store screenshots for Nanno, 2019. Digital design in Photoshop.
 categories: [Digital Design]
 year: 2019
 medium: Photoshop

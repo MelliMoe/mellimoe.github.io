@@ -1,6 +1,6 @@
 ---
 title: Casino Royale Precure
-description: Personal Work, 2021
+description: Personal Work, 2021. Fancure/precure illustration in Photoshop.
 categories: [Illustration]
 year: 2021
 medium: Photoshop

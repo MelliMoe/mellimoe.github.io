@@ -1,6 +1,6 @@
 ---
 title: Luxury Property Brochure
-description: Brochure design for Coldwell Banker, 2018
+description: Brochure design for Coldwell Banker, 2018. Print design in Photoshop.
 categories: [Print Design]
 year: 2018
 medium: Photoshop

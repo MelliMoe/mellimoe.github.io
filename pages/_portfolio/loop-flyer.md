@@ -1,6 +1,6 @@
 ---
 title: Loop Flyer
-description: Work for Pacific Living Properties, 2020
+description: Work for Pacific Living Properties, 2020. Print design in Photoshop.
 categories: [Print Design]
 year: 2020
 medium: Photoshop
