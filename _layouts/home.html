@@ -28,10 +28,10 @@ layout: default
                         {%- if img-index > 2 -%}
                         <img class="lazyload" src="{{ p.image | replace: 'fullsize', 'thumbs-min' | split: '.' | first | append: '-min.jpg' }}"
                              data-src="{{ p.image | replace: 'fullsize', 'thumbs' | split: '.' | join: '-thumb.' }}" alt="{{ p.description }}"
-                             width="360px" height="300px" />
+                             width="360" height="300" />
                         {%- else -%}
                         <img src="{{ p.image | replace: 'fullsize', 'thumbs' | split: '.' | join: '-thumb.' }}" alt="{{ p.description }}"
-                             width="360px" height="300px" />
+                             width="360" height="300" />
                         {%- endif -%}
                     </div>
                     <div class="label">
