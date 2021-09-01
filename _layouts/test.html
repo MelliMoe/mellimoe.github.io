@@ -10,24 +10,16 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    {% if page.layout == "home" or page.layout == "portfolio" -%}
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" async></script>
-    {% endif %}
-    {% if page.layout == "home" -%}
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js" defer></script>
     <script type="text/javascript" src="{{ site.baseurl }}/js/test.js" defer></script>
-    {% endif %}
     <link rel="dns-prefetch preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="font" href="{{ site.baseurl }}/assets/fonts/coves.otf" type="font/otf" crossorigin>
     <link rel='preload' as='style' href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'>
-    {% if page.layout == "home" -%}
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
-    {%- else -%}
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
-    {% endif %}
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png" type="image/png">
     {% include analytics.html %}
 </head>
@@ -37,11 +29,7 @@
         <header class="masthead clearfix">
             {% include svg-logo.html %}
             <div class="site-info">
-                {% if page.layout == "home" -%}
                 <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-                {%- else -%}
-                <span class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></span>
-                {% endif %}
                 <p class="site-description">{{ site.description }}</p>
             </div>
             <nav>
