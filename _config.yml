@@ -100,12 +100,12 @@ collections:
 # Front matter defaults
 defaults:
   - scope:
-      path: ""
+      path: "pages"
     values:
       layout: "general"
       image: *logo
   - scope:
-      path: ""
+      path: "pages"
       type: "portfolio"
     values:
       layout: "portfolio"
