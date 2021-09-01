@@ -34,12 +34,12 @@ layout: default
     {% if page.previous.url -%}
     <div class="prev"><a title="Previous" href="{{page.previous.url}}"><i class="nav-icon arrow-left"></i></a></div>
     {%- else -%}
-    <div class="prev">&nbsp</div>
+    <div class="prev">&nbsp;</div>
     {% endif %}
     <div class="home">
         <input type="checkbox" name="toggle" id="toggle" />
         <label for="toggle"><i class="nav-icon menu"></i></label>
-        <nav role="navigation" class="sidebar">
+        <nav class="sidebar">
             <ul class="sidebar-portfoliolist">
                 {% for p in site.portfolio -%}
                 <li class="{% if p.url == page.url %}current{% endif %}">
@@ -55,6 +55,6 @@ layout: default
     {% if page.next.url -%}
     <div class="next"><a title="Next" href="{{page.next.url}}"><i class="nav-icon arrow-right"></i></a></div>
     {%- else -%}
-    <div class="next">&nbsp</div>
+    <div class="next">&nbsp;</div>
     {% endif %}
 </div>
