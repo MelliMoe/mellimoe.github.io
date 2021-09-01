@@ -19,7 +19,10 @@
     <script src="{{ site.baseurl }}/js/gallery.js" defer></script>
     {%- else -%}
     <script src="{{ site.baseurl }}/js/widowfix.js" defer></script>
-    {% endif %}
+    {%- endif %}
+    {% if page.layout == "contact" -%}
+    <script src="{{ site.baseurl }}/js/contact.js" defer></script>
+    {%- endif %}
     <link rel="dns-prefetch preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="font" href="{{ site.baseurl }}/assets/fonts/coves.otf" type="font/otf" crossorigin>
