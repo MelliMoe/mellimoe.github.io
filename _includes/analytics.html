@@ -1,10 +1,27 @@
 {% if site.google_analytics or site.universal_analytics -%}
 <!-- Google Analytics -->
 {% if site.universal_analytics -%}
-<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.universal_analytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.universal_analytics }}"></script>
 {%- else -%}
-<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 {% endif %}
-<script defer src="{{ site.baseurl }}/js/analytics.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  {% if site.universal_analytics -%}
+  gtag('config', '{{ site.universal_analytics }}', {
+    cookie_domain: 'mellimoe.com',
+    cookie_flags: 'SameSite=None;Secure',
+  });
+  {% endif -%}
+  {% if site.google_analytics -%}
+  gtag('config', '{{ site.google_analytics }}', {
+    cookie_domain: 'mellimoe.com',
+    cookie_flags: 'SameSite=None;Secure',
+  });
+  {% endif -%}
+</script>
 <!-- End Google Analytics -->
 {% endif -%}
