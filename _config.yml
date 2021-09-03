@@ -54,6 +54,7 @@ menu-order:
   - about
   - contact
 portfolio-order:
+  - bizcard
   - fccl
   - savings-ad
   - instagram-stories
