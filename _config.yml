@@ -52,7 +52,7 @@ portfolio-categories:
 # For now there's some nested for loop hack in layouts
 menu-order:
   - about
-  - contact
+  #- contact
 portfolio-order:
   - bizcard
   - fccl
