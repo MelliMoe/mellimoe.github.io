@@ -3,7 +3,7 @@ layout: about
 title: About
 description: About Shelby "Moe" Moen, digital marketer and artist
 menu-title: About
-image: /assets/img/bioupdate.png
+image: /assets/img/2022Icon500.png
 image-alt: Shelby 'Moe' Moen, artist portrait, illustration
 ---
 
